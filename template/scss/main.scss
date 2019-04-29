@@ -11,6 +11,23 @@
 	color: #fff;
 }
 
+a {
+    color: #3c4b8c;
+    text-decoration: none;
+    border-bottom: 1px solid #3c4b8c;
+    &:hover {
+        color: #4690cf;
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+h1, h2 {
+    font-family: $title-font;
+    font-size: 24px;
+    line-height: 32px;
+}
+
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -138,8 +155,41 @@ body {
         }
     }
 
-    .banner {
+    .bottom-menu {
+        margin-top: 30px;
+        color: #ffffff;
+        background-color: #3c4b8c;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
         &__wrap {
+            margin-bottom: 30px;
+            min-height: 60px;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        &__item {
+            list-style: none;
+            line-height: 16px;
+            align-items: center;
+            padding: 0 18px;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 2px solid #b0b4cb;
+            &:hover {
+                border-bottom: 2px solid transparent;
+            }
+        }
+    }
+
+    .banner {
+        margin-bottom: 30px;
+        &__wrap {
+            margin: 0;
             padding: 0;
         }
         &__item {
@@ -177,6 +227,7 @@ body {
             a {
                 color: #ffffff;
                 text-decoration: none;
+                border-bottom: none;
                 padding: 0px 15px;
             }
         }
@@ -201,6 +252,31 @@ body {
             background-position: top 9px right -6px;
         }
     }
+
+    .content {
+        padding-right: 30px;
+    }
+}
+
+footer {
+    padding-bottom: 25px;
+    .copyright {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .footer-menu {
+        text-align: center;
+        font-weight: bold;
+        &__wrap {
+            list-style: none;
+            margin: 10px 0 0;
+            padding: 0;
+        }
+        &__item {
+
+        }
+    }
 }
 
 .img-responsive {
@@ -218,6 +294,10 @@ body {
 
 b, strong {
 	font-weight: bold;
+}
+
+.vk_groups {
+    margin: 0 auto;
 }
 
 @import "media"; // Always at the end
